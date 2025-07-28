@@ -37,17 +37,17 @@ int main() {
 	// Call assembly function to perform calculations
 	// Print results
 	// Free allocated memory
-	int rows = 0;
+	int Y = 0;
 	float* matrix = NULL;
 	int* accelerations = NULL;
 
 	// Read number of cars
 	print("Enter number of cars: \n");
-	scanf("%d", &rows);
+	scanf("%d", &Y);
 
 	//Allocate memory for matrix and accelerations
-	matrix = (float*)malloc(rows * 3 * sizeof(float));
-	accelerations = (int*)malloc(rows * sizeof(int));
+	matrix = (float*)malloc(Y * 3 * sizeof(float));
+	accelerations = (int*)malloc(Y * sizeof(int));
 
 	if (matrix == NULL || accelerations == NULL) {
 		printf("Memory allocation failed.\n");
@@ -55,13 +55,16 @@ int main() {
 	}
 
 	// Read input data
-	read_input(matrix, rows);
+	read_input(matrix, Y);
 
 	//calculate accelerations with assembly function
-	calc_acceleration(matrix, accelerations, rows);
+	calc_acceleration(matrix, accelerations, Y);
 
 	//print the results
-	print_result(accelerations, rows);
+	print_result(accelerations, Y);
+
+	// Free allocated memory
+	free(matrix);
 
 	return 0;
 }
