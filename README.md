@@ -1,6 +1,6 @@
  MP2: Acceleration Computation with SIMD in x86-64
 
-Group Members
+Group 8
 - Wesley Sy
 - John Ian Sayat
 
