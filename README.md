@@ -2,7 +2,7 @@
 
 Group Members
 - Wesley Sy
-- Ian Sayat
+- John Ian Sayat
 
  Program Overview
 
