@@ -6,12 +6,12 @@ Group Members
 
  Program Overview
 
-- The `main.c` file handles:
+- The [main.c](main.c) file handles:
   - Input collection (manual or randomized)
   - Memory allocation
   - Output printing
 
-- The `asmfunc.asm` file (in x86-64 SIMD) handles:
+- The [asmfunc.asm](asmfunc.asm) file (in x86-64 SIMD) handles:
   - Velocity conversion from km/h to m/s
   - Acceleration calculation
   - Conversion from `float` to `int`
@@ -39,12 +39,22 @@ Execution Times (averaged over 30 runs)
 - Performance gain is more evident with larger input sizes.
 
 
-Output Correctness Check
+Output Correctness Check:
+
+Correctness Check (Manual Input for 3 Cars)
+[Correctness](manual-inputting.jpg)
+
+Random Generation Output
+![Random Output](generating-random-input.jpg)
+
+Performance Timing (Y = 10, 100, 1000, 10000)
+![Timing](averagetime.jpg)
 
 
 
 
-## 📹 Video Demonstration
+
+Video Demonstration
 
 The video below shows:
 - Code explanation
